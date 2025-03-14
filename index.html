@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug's Bookshelf</title>
+    <link rel="stylesheet" href="styles/bookshelf-styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="title">Bug's Bookshelf</a>
+        <div class="navigation" id="nav">
+            <a href="index.html">Home</a>
+            <a href="#booknews">News</a>
+            <a href="#faves">My Favorites</a>
+            <a href="about.html">About</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+<div class="container">
+        <header>
+            <h1>Bug's Bookshelf</h1>
+            <p>A personal blog about reading, reviewing, and appreciating books!</p>
+        </header>
+
+        <!--about me section-->
+        <div class="aboutme">
+            <p>My name is Hila and I am a lifelong reader and a student of English and Linguistics at the University of Oregon.
+                After using many book reviewing websites and apps such as Goodreads and Storygraph for years, I decided to make my 
+                own blog dedicated to my love of reading! I hope you enjoy looking through my website, and feel free to email me in the link bellow 
+                or send me a comment using the feedback form at the bottom of the page!</p>
+            <div class="aboutcontact">
+                <img src="images/gmail_image.png" alt="email" class="contact-icon"> Email: <a href="mailto:example@domain.com" class="contact-link"> hila.badescu@gmail.com</a>
+            </div>
+        </div>
+
+        <!--recent reads section-->
+        <div class="recentheader">
+            <h2>&#9734;RECENT READS&#9734;</h2>
+        </div>
+        <div class="recentreads">
+            <div class="recentitem">
+                <img src="Images/ballad_for_sophie.jpeg" alt="Ballad for Sophie Book cover" class="book-cover">
+               <p>A dark yet beautiful graphic novel about a retired musician with a complicated past.</p>
+               <div class="rating">
+                    <p>My rating:&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+               </div>
+            </div>
+            <div class="recentitem">
+                <img src="Images/TEWWG.jpeg" alt="Their Eyes Were Watching God cover" class="book-cover">
+                <p>A modern American classic focusing on issues of racism, sexism, and the Black female experience in the south.</p>
+                <div class="rating">
+                   <p>My rating: &#9734;&#9734;&#9734;</p> 
+                </div>
+            </div>
+            <div class="recentitem">
+                <img src="Images/poems_to_see_by.jpeg" alt="Poems to See By Book cover" class="book-cover">
+                <p>A collection of poems beautifully illustrated by prominent and upcoming artists, breathing new life into well loved poetry.</p>
+                <div class="rating">
+                   <p>My rating:&#9734;&#9734;&#9734;</p> 
+                </div>
+            </div>
+        </div>
+
+        <!--book news section-->
+        <div class="booknews" id="booknews">
+            <div class="newstext">
+                <h2>Book News</h2>
+                <p>Some may think of reading as a boring, solitary hobby without any interesting sorrounding materials, 
+                but there are actually lots of book-related events and new over the web!</p>
+            </div>
+            <div class="newscontainer">
+                <div class="newsarticle"> 
+                    <a href="https://www.nytimes.com/interactive/2024/books/best-books-21st-century.html"> 
+                    Check out the New York Times' List of the 100 best books of the 21st Century!
+                    <img src="Images/nyt.png" alt="nyt logo" class="logo">
+                    </a>
+                </div>
+                <div class="newsarticle"> 
+                    <a href="https://www.goodreads.com/choiceawards/best-books-2024">
+                    Goodreads has published their yearly, reader-voted list of the best books of the year! 
+                    Some of the 2024 picks really shocked me!
+                    <img src="Images/Goodreads_logo.png" alt="goodreads logo" class="logo">
+                    </a>
+            </div>
+            </div>
+        </div>
+
+    <!--to be read section-->
+    <div class="tbr">
+        <h2>My TBR</h2>
+        <p>TBR stands for "to be read". Creating a list of books you want to read (or a 'TBR pile') is a 
+            great way to organise the things you want to read and decide what book to pick up next!</p>
+        <div class="tbrgrid">
+        <div class="tbritem">
+            <img src="Images/pachinko.jpeg" alt="Pachinko cover" class="book-cover">
+        </div>
+        <div class="tbritem">
+            <img src="Images/les_fleurs_de_mal.jpeg" alt="Les fleurs de mal cover" class="book-cover">
+        </div>
+        <div class="tbritem">
+            <img src="Images/after_dark.jpeg" alt="After dark cover" class="book-cover">
+        </div>
+        <div class="tbritem">
+            <img src="Images/human_acts.jpeg" alt="human acts cover" class="book-cover">
+        </div>
+        <div class="tbritem">
+            <img src="Images/first_love.jpeg" alt="first love cover" class="book-cover">
+        </div>
+        <div class="tbritem">
+            <img src="Images/before_your_memory_fades.jpeg" alt="before your memory fades cover" class="book-cover">
+        </div>
+        <div class="tbritem">
+            <img src="Images/wind_in_the_willows.jpeg" alt="the wind in the willows cover" class="book-cover">
+        </div>
+        <div class="tbritem">
+            <img src="Images/beloved.jpeg" alt="beloved cover" class="book-cover">
+        </div>
+        <div class="tbritem">
+            <img src="Images/cuisine_chinoise.jpeg" alt="cuisine chinoise cover" class="book-cover">
+        </div>
+        <div class="tbritem">
+            <img src="Images/mamo.jpeg" alt="mamo cover" class="book-cover">
+        </div>
+        </div>
+    </div>
+
+    <!--favorites section-->
+    <div class="faveheader" id="faves">
+        <h2>My favorite books of all time</h2>
+        <p>It's hard to pick a favorite when you read so much, but these books are some of the ones that impressed and 
+            astonished me the most. I would reccomend these to anyone on Earth! In fact, I think you need to get off your
+            device and go read them ASAP. </p>
+    </div>
+    <div class="favorites">
+        <div class="faveitem">
+            <img src="Images/room_with_a_view.jpg" alt="room with a view cover" class="book-cover">
+            <div class="faveitem-overlay">
+                <a href="https://www.amazon.com/Room-View-Penguin-Twentieth-Century-Classics/dp/0141183292/ref=sr_1_1?crid=35HJBQE7GOVL1&dib=eyJ2IjoiMSJ9.rF2mOkahjUzM8p1uu4L6qCT3Id8AtU1rY_2oura0P7ptjmWLnG7jre2bQ78SQXy-7R6HP4cVl0YmexuLgvVHUfUHeB1y5Gx6ywZBHqHiHUaTVp7X3e7newzNFaeigx2aera3ogG9luL_YMvu2ZdyLKWe2CHsovTrQB_II7jhkIDbm7bDbJRhvTllFw0DQl3Bcl9hiBQMKPzAFMXD8k49FulO7SSI1M1XQmK9B5PmPZA.yOGzNlkpMsJ5Cc4L6Cj98J76JG3DVu8oAPs8x46bmis&dib_tag=se&keywords=room+with+a+view+by+e.m.+forster&qid=1741992012&sprefix=room+with+%2Caps%2C201&sr=8-1">
+                    Buy it on Amazon
+                </a>
+            </div>
+        </div>
+        <div class="faveitem">
+            <img src="Images/book_of_form_and_emptiness.jpeg" alt="the book of form and emtiness cover" class="book-cover">
+            <div class="faveitem-overlay">
+                <a href="https://www.amazon.com/dp/0399563660?k=the%20book%20of%20form%20and%20emptiness&ref_=nb_sb_ss_w_scx-ent-pd-bk-d_de_k0_1_17&crid=2UG2PFX6Y6CRG&sprefix=the%20book%20of%20form%20">
+                    Buy it on Amazon
+                </a>
+            </div>
+        </div>
+        <div class="faveitem">
+            <img src="Images/the_magic_fish.jpeg" alt="the magic fish cover" class="book-cover">
+            <div class="faveitem-overlay">
+                <a href="https://www.amazon.com/Magic-Fish-Trung-Nguyen/dp/1984851594/ref=sr_1_1?crid=3ICSXIOEO5H8J&dib=eyJ2IjoiMSJ9.JgMLznNY7mJqcfndx9BFxERqMo0aPDRkghF0FCBXOILK9lKm7NFjXTTLefF_Uh1lgysXNrD5ygN_FwGV2wqDbPVV_jOl26w9A7089rCLi5S2bRQVSxHaKvLT-BSgH2_BhCtWimW8M6grjeAcKfgqUoP8sQNBcSkMSsARby6jOWKfTtuVUXTL1MCU25zkDx2CUZmiQqGbLObZA3Kx7cqleYBrGj71TKseyfLN3gxa-4E._EJxvyxEeu6fYkLgkOzzU3dcv2n0GB7GWNowU2dEFXo&dib_tag=se&keywords=the+magic+fish&qid=1741992195&s=books&sprefix=the+magic+fish%2Cstripbooks%2C213&sr=1-1">
+                    Buy it on Amazon
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--thank you for visiting sections-->
+    <div class="thanks">
+        <div class="signup">
+            <button class="buttonopen" onclick="document.getElementById('signup-form').style.display='flex'">Got Any Comments?</button>
+            
+            <div id="signup-form" class="form-popup">
+                <form class="form-container">
+                    <h1>Send Me Your Feedback!</h1>
+                    <label for="email">Email:</label>
+                    <input class="flex emailform" id="email" type="email" name="email" placeholder="Enter your email adress here" required>
+                    <label for="textarea">Message:</label>
+                    <textarea class="flex textarea" id="textarea" name="comments" rows="4" cols="60" maxlength="400" placeholder="No more than 400 characters long">Write your message here</textarea>
+                    <button class="flex button close" onclick="document.getElementById('signup-form').style.display='none'">Close</button>
+                    <button class="flex button submit" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <p> All book covers taken from Goodreads and protected under fair use for non commercial purposes. All rights reserved to the respective publishers. Gmail and New York Times icon derived from cleanpng.com</p>
+</footer>
+</div>
+</body>
