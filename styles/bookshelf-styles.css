@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+    background-color: rgba(37, 52, 79);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*navbar styling*/
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: rgba(97, 120, 145, 0.9);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  ;
+    z-index: 1000;
+    padding: 30px;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    color:rgba(37, 52, 79);
+  }
+
+/*header styling*/
+header {
+    display: block;
+    background: rgba(37, 52, 79);
+    color: rgb(242, 236, 188);
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.aboutme {
+    display: block;
+    background-color: rgba(97, 120, 145);
+    padding: 30px;
+    color: rgba(37, 52, 79);
+    width: 100%;
+    font-size: larger;
+}
+
+.contact-icon {
+    width: 20px;
+    height: auto;
+    transform: translateY(5px);
+}
+
+.recentheader {
+    color: rgb(242, 236, 188);
+    background-color: rgb(69, 48, 35);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/*styling for "recent reads" section*/
+
+.recentreads {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(69, 48, 35);
+    color: rgb(61, 43, 32);
+    width: 99%;
+    padding: 30px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+
+.recentitem {
+    flex: 1;
+    display:inline-grid;
+    grid-template-columns: 300px 1fr;
+    background: rgba(213, 184, 147);
+    margin-bottom: 20px;          
+    padding: 25px;   
+    border-radius: 15px;             
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.recentitem img {
+    max-width: 250px;
+    height: 365px;
+    display: grid;
+
+}
+
+.recentitem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}  
+
+/*styling for news section*/
+.booknews {
+    display: grid;
+    grid-template-areas:
+    "newstext"
+    "newscontainer";
+    background-color: rgba(99, 32, 36);
+    padding: 30px;
+    width: 100%;
+    color: rgba(213, 184, 147);
+    gap: 5px;
+    text-align: center;
+}
+
+.newscontainer {
+    display: grid;
+    grid-template-areas:
+     "newsarticle newsarticle";
+}
+
+/*changing color of links*/
+a {
+    color:rgb(69, 48, 35)
+}
+
+a:hover {
+    color: rgb(122, 85, 62);
+}
+
+.newsarticle {
+    background: rgba(213, 184, 147);        
+    border-radius: 15px;          
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: rgb(69, 48, 35);
+}
+
+.newsarticle:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+.logo {
+width: 100%;
+height: auto;
+}
+
+/*styling and creating grid for tbr section*/
+.tbr {
+    background-color: rgba(37, 52, 79);
+    color: rgba(97, 120, 145);
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    text-align: center;
+}
+
+.tbrgrid {
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 15px;
+    padding: 10px;
+    grid-template-areas: 
+    "book-cover book-cover book-cover book-cover book-cover"
+    "book-cover book-cover book-cover book-cover book-cover"
+}
+
+/*creating subtle shadows for all book covers on the page*/
+.book-cover {
+    width: 250px;
+    height: 350px;
+    box-shadow: 0px 1px 7px rgba(54, 54, 54, 0.476) 
+}
+
+/*styling for favorites section*/
+.faveheader {
+    background-color: rgba(95, 120, 145);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: rgba(37, 52, 79);
+}
+.favorites {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(97, 120, 145);
+}
+
+.faveitem {
+    position: relative;
+}
+.faveitem-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    align-items: center;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    justify-content: center;
+}
+
+.faveitem:hover .faveitem-overlay {
+    opacity: 1;
+}
+
+.faveitem-overlay a {
+    color: rgb(249, 225, 193);
+}
+
+.faveitem-overlay a:hover {
+    color: rgb(122, 85, 62)
+}
+
+.faveitem img {
+    max-height: 400px;
+    max-width: 350px;
+}
+
+/*styling for thank you for visiting section*/
+.thanks {
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(213, 184, 147);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*styling for button and form*/
+.flex {
+    flex: 1;
+}
+
+.buttonopen {
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(61, 43, 32);
+    color: rgb(249, 225, 193);
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+}
+
+.buttonopen:hover {
+    background-color: rgb(122, 85, 62);
+    cursor: pointer;
+}
+
+.form-container {
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    flex-direction: column;
+    color: rgb(61, 43, 32);
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex.emailform {
+    width: 99%;
+    height: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.flex.textarea {
+    width: 99%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.flex.button {
+    border: none;
+    border-radius: 15px;
+    font-size: large;
+    width: 30%;
+}
+
+.flex.button:hover {
+    background-color: bisque;
+}
+
+.form-popup {
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(213, 184, 147);
+    border-radius: 15px;
+    height: 400px;
+    padding: 20px;
+    gap: 10px;
+}
+
+/*footer styling*/
+footer {
+    background-color: rgba(69, 48, 35);
+    color: rgba(213, 184, 147);
+    padding: 20px;
+    width: 100%;
+}
+
+/*media queries for different screen sizes*/
+
+@media (max-width:768px) {
+
+    
+    .newscontainer {
+        grid-template-areas:
+        "newsarticle"
+         "newsarticle";   
+    }
+    
+    .tbrgrid {
+        grid-template-areas: 
+        "book-cover book-cover"
+        "book-cover book-cover"
+        "book-cover book-cover" 
+        "book-cover book-cover"
+        "book-cover book-cover";
+    }
+    .book-cover {
+        width: 200px;
+        height: 300px;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    }
+
+    @media (max-width:576px){
+        .favorites {
+            flex-wrap: wrap;
+        }
+
+    }

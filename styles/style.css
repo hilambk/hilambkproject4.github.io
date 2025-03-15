@@ -1,0 +1,162 @@
+body {
+  background: rgba(37, 52, 79);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+/*navbar styling*/
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: rgba(97, 120, 145, 0.9);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  ;
+  z-index: 1000;
+  padding: 30px;
+}
+
+.mobile-menu-btn {
+  display: none;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color:rgba(37, 52, 79);
+}
+
+.navbar a:active {
+  font-weight: bolder;
+}
+
+/*about me page styling*/
+.about {
+  width: 98%;                
+  text-align: center;          
+  margin-bottom: 10px;  
+  margin-top: 30px;       
+  padding: 15px;               
+  background-color: rgba(97, 120, 145);
+  color: rgba(37, 52, 79);
+  border-radius: 15px;        
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  
+  backdrop-filter: blur(50px); 
+}
+
+.res-btn {
+    width: 98%;                
+    text-align: center;          
+    margin-bottom: 10px;         
+    padding: 15px;               
+    background-color: rgba(97, 120, 145);
+    color: rgba(37, 52, 79);
+    border-radius: 15px;        
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  
+    backdrop-filter: blur(50px);
+    font-size: large; 
+}
+
+
+.res-btn a {
+  text-decoration: none;
+
+}
+
+/*styling for h1 text*/
+  h1 {
+font-weight: bolder;
+font-size: 50px;
+  }
+  .container {
+   display: flex;
+   flex-wrap: wrap; 
+   width: 100%;
+  }
+/*styling for header*/
+header {
+    width: 98%;                
+    text-align: center;          
+    margin-bottom: 10px;         
+    padding: 15px;               
+    background-color: rgba(97, 120, 145);
+    color: rgba(37, 52, 79);
+    border-radius: 15px;        
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  
+    backdrop-filter: blur(50px); 
+}
+
+/*making container items correct size and flow*/
+.item {
+  max-width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+  gap: 20px;
+  flex: 1 1 80px;
+}
+/*styling of container items*/
+section {
+  min-width: 300px;
+  margin-bottom: 20px;
+  box-shadow: rgba(53, 53, 53, 0.1) 0px 4px 15px;
+  backdrop-filter: blur(5px);
+  flex: 1 1 calc(50% - 20px);
+  padding: 25px;
+  border-radius: 15px;
+  row-gap: 10px;
+  background-color: rgba(97, 120, 145);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+/*pseudo class for hover animation*/
+section:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15)
+}
+/*icon image size & alignment with text*/
+img {
+  width: 20px;
+  transform: translateY(5px);
+}
+
+/*styling colors for visited, unvisited, and hover links*/
+a:link {
+  color: rgb(242, 236, 188)
+}
+a:visited {
+  color: rgb(242, 236, 188)
+}
+a:hover {
+  color: rgb(255, 249, 200)
+}
+
+footer {
+  color: rgb(61, 43, 32);
+  background: rgba(213, 184, 147);
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/*media query to insure responsiveness to different screen sizes*/
+@media screen and (max-width: 787px) {
+  section {
+    width: 700px;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    flex: 100%
+  }
+  body {
+    padding: 10px;
+  }
+   }
